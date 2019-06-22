@@ -3,6 +3,9 @@
 * Set up functionality so the user can filter 
 * Used reactor for routing react content API
 * Full responsive
+* Used react icons is very nice features render as a SVG 
+
+## User stories
 
 ### Home page
 * Have hero component that will have a background image
@@ -27,12 +30,12 @@
 * Create custom 404 page not found 
 * Will have option fo click return to home page or can navigate through a navbar
 
-
+___
 
 
 ## Single room
 * forEach
-* A <Switch> renders the first child <Route> that matches. A <Route> with no path always matches.
+* A Switch renders the first child Route that matches. A Route with no path always matches.
 
 ```
 <Switch>
@@ -44,7 +47,23 @@
 
 ```
 
+## Navbar
+* Have navbar every page
+* app.js pretty much done
+
+```
+      <Navbar />
+      <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/rooms" component={Rooms} />
+      <Route exact path="/rooms/:roomName" component={SingleRoom} />
+      <Route component={Error} />
+      </Switch>
+
+```
+
 
 ## Additional Resources
 1. <a href="https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/" target="_blank">react-router-dom an netlify</a>
 2. <a href="https://reacttraining.com/react-router/web/guides/quick-start" target="_blank">React Router Dom </a>
+3. <a href="https://react-icons.netlify.com/#/" target="_blank">React Icons</a>
