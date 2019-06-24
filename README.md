@@ -62,6 +62,12 @@ ___
 
 ```
 
+## React.createContext API
+* Create a Context object
+* Access to component
+* Provider React component : allows the access to my context all throughout my application
+* Context.Consumer : Consumer will lets subscribe to a context within a function component.
+
 
 ## Additional Resources
 1. <a href="https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/" target="_blank">react-router-dom an netlify</a>
@@ -69,3 +75,4 @@ ___
 3. <a href="https://react-icons.netlify.com/#/" target="_blank">React Icons</a>
 4. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns" target="_blank">grid-template-columns</a>
 5. <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">A Complete Guide to Grid</a>
+6. <a href="https://reactjs.org/docs/context.html#reactcreatecontext" target="_blank">React.createContext API</a>
