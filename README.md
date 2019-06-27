@@ -1,7 +1,8 @@
 # React Beach Resort Project
-* Display hotel rooms
-* Set up functionality so the user can filter 
-* Used reactor for routing react content API
+* Beach Resort is a full stack mock resort website template that can be sold to clients to display their hotel rooms and have option to filter : room type, number of guests, search by the price, room size, included breakfast , allowed pet … more 
+* Used react router for routing and create custom 404 page not found and will have option of click return to home page or can navigate through a navbar
+* Used react context API for state management 
+* used contentful  headlessCMS for data management
 * Full responsive
 * Used react icons is very nice features render as a SVG 
 
