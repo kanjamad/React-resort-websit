@@ -72,6 +72,9 @@ ___
 ![website-gif](assets/resort.gif "website-gif")
 
 
+![loading](assets/loading.gif "loading")
+
+
 ## Additional Resources
 1. <a href="https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/" target="_blank">react-router-dom an netlify</a>
 2. <a href="https://reacttraining.com/react-router/web/guides/quick-start" target="_blank">React Router Dom </a>
