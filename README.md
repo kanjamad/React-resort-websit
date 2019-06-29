@@ -96,3 +96,4 @@ npm install --save styled-components
 9. <a href="https://reactjs.org/docs/typechecking-with-proptypes.html" target="_blank">Typechecking With PropTypes</a>
 10. <a href="https://www.iconfinder.com/" target="_blank">logo icon</a>
 11. <a href="https://www.styled-components.com/" target="_blank">Styled components</a>
+12. <a href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/" target="_blank">Auto-Sizing Columns in CSS Grid: `auto-fill` vs `auto-fit`</a>
