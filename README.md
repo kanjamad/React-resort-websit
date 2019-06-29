@@ -72,8 +72,8 @@ ___
 ![loading](assets/loading.gif "loading")
 
 
-## Styled components
-* We can atrch styles to the component and it will be right away rendered
+## Styled components to styled-Hero
+* We can attach styles to the component and it will be right away rendered
 * Use javaScript and CSS
 * Installation 
 
