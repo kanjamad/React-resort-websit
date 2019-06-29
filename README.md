@@ -85,3 +85,4 @@ ___
 7. <a href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d" target="_blank">Simplify your JavaScript – Use .map(), .reduce(), and .filter()</a>
 8. <a href="https://icons8.com/preloaders/en/search/2/loading" target="_blank">loading gif</a>
 9. <a href="https://reactjs.org/docs/typechecking-with-proptypes.html" target="_blank">Typechecking With PropTypes</a>
+10. <a href="https://www.iconfinder.com/" target="_blank">logo icon</a>
