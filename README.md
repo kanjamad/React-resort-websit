@@ -75,6 +75,17 @@ ___
 ![loading](assets/loading.gif "loading")
 
 
+## Styled components
+* We can atrch styles to the component and it will be right away rendered
+* Use javaScript and CSS
+* Installation 
+
+```
+npm install --save styled-components
+
+```
+
+
 ## Additional Resources
 1. <a href="https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/" target="_blank">react-router-dom an netlify</a>
 2. <a href="https://reacttraining.com/react-router/web/guides/quick-start" target="_blank">React Router Dom </a>
@@ -86,3 +97,4 @@ ___
 8. <a href="https://icons8.com/preloaders/en/search/2/loading" target="_blank">loading gif</a>
 9. <a href="https://reactjs.org/docs/typechecking-with-proptypes.html" target="_blank">Typechecking With PropTypes</a>
 10. <a href="https://www.iconfinder.com/" target="_blank">logo icon</a>
+11. <a href="https://www.styled-components.com/" target="_blank">Styled components</a>
