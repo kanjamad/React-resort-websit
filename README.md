@@ -69,7 +69,7 @@ ___
 * Provider React component : allows the access to my context all throughout my application
 * Context.Consumer : Consumer will lets subscribe to a context within a function component.
 
-![loading](assets/loading.gif "loading")
+![loading](assets/load.gif "loading")
 
 
 ## Styled components to styled-Hero
