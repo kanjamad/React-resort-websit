@@ -22,13 +22,14 @@ class RoomProvider extends Component {
     // getData
 
         componentDidMount() {
+            //this.getData
             let rooms = this.formatData(items);
             // console.log(rooms);
             let featuredRooms = rooms.filter(room => room.featured === true);
             let maxPrice = Math.max(...rooms.map(item => item.price));
-            console.log(maxPrice);
+            // console.log(maxPrice);
             let maxSize = Math.max(...rooms.map(item => item.size));
-            console.log(maxSize);
+            // console.log(maxSize);
 
             this.setState({
                 rooms,

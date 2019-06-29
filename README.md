@@ -84,6 +84,52 @@ npm install --save styled-components
 
 ![styled-hero](assets/styled.gif "styled-hero")
 
+
+
+
+## Filter Room
+### RoomType
+* set up funtion will only repeat return unique values
+* Remove Array Duplicates in ES6 (1.Using set 2.Using filter 3.Using reduce )
+* Using  Set data structure
+
+```
+//Remove-Array-Duplicates-in-ES6
+const array = [1,2,5,2,1,8];
+
+//Step1
+const uniqueSet = new Set(array);
+// Set{1,2,5,8}
+
+//Step2 ;convert it back to an array by using the spread operator ...
+const backToArray = [...unigeSet];
+// [1,2,5,8]
+
+```
+
+* Passing  the string it will be check what kind of value you have for the type
+* If that value will not be in the Set, will included it
+* If in the Set by default Set will not included it 
+* And will get all unique values 
+
+```
+// get all unique values
+      const getUnique = (items, value) => {
+      return [...new Set(items.map(item => item[value]))]
+}
+
+// get unique types
+      let types = getUnique(rooms, 'type');
+
+// add all
+      types = ['all',...types];
+
+// map to jsx
+      types = types.map((item, index)=> {
+            return <option value={item} key={index}> {item} </option>
+})
+```
+
 ## Additional Resources
 1. <a href="https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/" target="_blank">react-router-dom an netlify</a>
 2. <a href="https://reacttraining.com/react-router/web/guides/quick-start" target="_blank">React Router Dom </a>
