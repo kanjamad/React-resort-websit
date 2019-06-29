@@ -69,9 +69,6 @@ ___
 * Provider React component : allows the access to my context all throughout my application
 * Context.Consumer : Consumer will lets subscribe to a context within a function component.
 
-![website-gif](assets/resort.gif "website-gif")
-
-
 ![loading](assets/loading.gif "loading")
 
 
@@ -85,6 +82,7 @@ npm install --save styled-components
 
 ```
 
+![styled-hero](assets/styled.gif "styled-hero")
 
 ## Additional Resources
 1. <a href="https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/" target="_blank">react-router-dom an netlify</a>
