@@ -35,7 +35,6 @@ ___
 
 
 ## Single room
-* forEach
 * A Switch renders the first child Route that matches. A Route with no path always matches.
 
 ```
@@ -50,7 +49,6 @@ ___
 
 ## Navbar
 * Have navbar every page
-* app.js pretty much done
 
 ```
       <Navbar />
