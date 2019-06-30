@@ -69,12 +69,34 @@ class RoomProvider extends Component {
                 [name] : value
             },
             this.filterRooms
-        );
-        
+        );   
     };
 
     filterRooms = () => {
-        console.log("hello filterRooms");
+        // console.log("hello filterRooms");
+        let {
+            rooms,
+            type,
+            capacity,
+            price,
+            minSize,
+            maxSize,
+            breakfast,
+            pets
+        } = this.state;
+
+        //all the rooms
+        let tempRooms = [...rooms];
+
+        // filter by type
+        if (type !== "all") {
+            tempRooms = tempRooms.filter(room => room.type === type);
+        }
+
+        // change state
+        this.setState({
+            sortedRooms: tempRooms
+        });
     };
 
     render() {

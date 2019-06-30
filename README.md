@@ -178,6 +178,40 @@ const backToArray = [...unigeSet];
 ![filter](assets/filter-t.gif "filter")
 
 
+* Done Type filter >>>
+```
+   filterRooms = () => {
+        // console.log("hello filterRooms");
+        let {
+            rooms,
+            type,
+            capacity,
+            price,
+            minSize,
+            maxSize,
+            breakfast,
+            pets
+        } = this.state;
+
+        //all the rooms
+        let tempRooms = [...rooms];
+
+        // filter by type
+        if (type !== "all") {
+            tempRooms = tempRooms.filter(room => room.type === type);
+        }
+
+        // change state
+        this.setState({
+            sortedRooms: tempRooms
+        });
+    };
+
+```
+![filter-type](assets/filtertypeRoom.gif "filter-type")
+
+
+
 
 ## Additional Resources
 1. <a href="https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/" target="_blank">react-router-dom an netlify</a>
