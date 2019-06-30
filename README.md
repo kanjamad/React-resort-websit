@@ -209,6 +209,14 @@ const backToArray = [...unigeSet];
 ![filter-type](assets/filtertypeRoom.gif "filter-type")
 
 
+## Contentful
+* Contentful somthing call headless CMS
+* Contentful is content infrastructure. Our platform lets you create, manage and distribute content to any platform. Unlike a CMS, we give you total freedom to create your own content model so you can decide which content you want to manage.
+* Nice graphical interface to set up my application
+* Consume data without changing the data
+* Can access data even have different type of application. Example currently I'm using react application and I could do the same with Gatsby, I could do the same with vanilla javaScript and that external platform will be by the name of contentful.  
+
+
 
 
 ## Additional Resources
@@ -224,5 +232,11 @@ const backToArray = [...unigeSet];
 10. <a href="https://www.iconfinder.com/" target="_blank">logo icon</a>
 11. <a href="https://www.styled-components.com/" target="_blank">Styled components</a>
 12. <a href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/" target="_blank">Auto-Sizing Columns in CSS Grid: `auto-fill` vs `auto-fit`</a>
-13. <a href="https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates" target="_blank">How to Remove Array Duplicates in ES6
-</a>
+13. <a href="https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates" target="_blank">How to Remove Array Duplicates in ES6</a>
+14. <a href="https://www.contentful.com/" target="_blank">Contentful</a>
+15. <a href="https://www.contentful.com/r/knowledgebase/headless-and-decoupled-cms/" target="_blank">Content infrastructure vs. headless and decoupled CMS</a>
+16. <a href="https://contentful.github.io/contentful.js/contentful/7.8.1/index.html" target="_blank">contentful.js - Contentful JavaScript Delivery SDK</a>
+17. <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/search-parameters/select-operator" target="_blank">REST API reference </a>
+
+
+

@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import items from './data';
+import Client from './Contentful';
+
+Client.getEntries({
+    content_type : "beachResortRoom"
+}).then((response) => console.log(response.items))
 
 const RoomContext = React.createContext();
 // <RoomContext.Provider value={'hello'}
@@ -19,7 +24,7 @@ class RoomProvider extends Component {
         breakfast: false,
         pets: false,
     };
-    // getData
+    // getData from contentful
 
         componentDidMount() {
             //this.getData
