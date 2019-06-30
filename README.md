@@ -88,7 +88,7 @@ npm install --save styled-components
 
 
 ## Filter Room
-### RoomType
+### Room filter setup
 * set up funtion will only repeat return unique values
 * Remove Array Duplicates in ES6 (1.Using set 2.Using filter 3.Using reduce )
 * Using  Set data structure
@@ -132,6 +132,53 @@ const backToArray = [...unigeSet];
 
 ![roomType](assets/roomType.png "roomType")
 
+
+
+
+### Type filter
+
+* Whatever I'm getting back, doesn't matter whatever type, capacity, price ....
+* As long as I name them exactly like I have an a state
+
+```
+  state = {
+    rooms: [],
+    sortedRooms: [],
+    featuredRooms: [],
+    loading: true,
+    type: "all",
+    capacity: 1,
+    price: 0,
+    minPrice: 0,
+    maxPrice: 0,
+    minSize: 0,
+    maxSize: 0,
+    breakfast: false,
+    pets: false
+  };
+
+```
+
+```
+ handleChange = event => {
+        const target = event.target;
+        const value = event.type === 'checkbox'? target.checked : target.value;
+        const name = event.target.name;
+
+        this.setState(
+            {
+                [name] : value
+            },
+            this.filterRooms
+        );
+        
+    };
+
+```
+![filter](assets/filter-t.gif "filter")
+
+
+
 ## Additional Resources
 1. <a href="https://www.slightedgecoder.com/2018/12/18/page-not-found-on-netlify-with-react-router/" target="_blank">react-router-dom an netlify</a>
 2. <a href="https://reacttraining.com/react-router/web/guides/quick-start" target="_blank">React Router Dom </a>
@@ -145,3 +192,5 @@ const backToArray = [...unigeSet];
 10. <a href="https://www.iconfinder.com/" target="_blank">logo icon</a>
 11. <a href="https://www.styled-components.com/" target="_blank">Styled components</a>
 12. <a href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/" target="_blank">Auto-Sizing Columns in CSS Grid: `auto-fill` vs `auto-fit`</a>
+13. <a href="https://www.samanthaming.com/tidbits/43-3-ways-to-remove-array-duplicates" target="_blank">How to Remove Array Duplicates in ES6
+</a>
