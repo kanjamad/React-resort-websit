@@ -1,4 +1,15 @@
+
+
+
+![Logo](src/images/logo-.svg "Logo")
 # React Beach Resort Project
+
+This app ....
+
+* [Link to project hosted on Netlify](https://beach-resort-kanjamad.netlify.com/)
+* [Link to project hosted on Github](https://github.com/kanjamad/React-resort-websit)
+
+
 * Beach Resort is a full stack mock resort website template that can be sold to clients to display their hotel rooms and have option to filter : room type, number of guests, search by the price, room size, included breakfast , allowed pet … more 
 * Used react router for routing and create custom 404 page not found and will have option of click return to home page or can navigate through a navbar
 * Used react context API for state management 
