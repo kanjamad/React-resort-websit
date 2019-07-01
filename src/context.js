@@ -30,8 +30,8 @@ class RoomProvider extends Component {
         try {
             let response = await Client.getEntries({
                 content_type : "beachResortRoom",
-                order: "sys.createdAt"
-                // order: "fields.price"
+                // order: "sys.createdAt"
+                order: "fields.price"
                 // order: "-fields.price"
             });
         let rooms = this.formatData(response.items);
@@ -54,7 +54,26 @@ class RoomProvider extends Component {
     };
 
         componentDidMount() {
-            this.getData()
+            this.getData();
+
+            // let rooms = this.formatData(items);
+            // // console.log(rooms);
+            // let featuredRooms = rooms.filter(room => room.featured === true);
+            // let maxPrice = Math.max(...rooms.map(item => item.price));
+            // // console.log(maxPrice);
+            // let maxSize = Math.max(...rooms.map(item => item.size));
+            // // console.log(maxSize);
+
+            // this.setState({
+            //     rooms,
+            //     featuredRooms,
+            //     sortedRooms: rooms,
+            //     loading: false,
+            //     price: maxPrice,
+            //     maxPrice,
+            //     maxSize,
+            // });
+
         }
 
         formatData(itemsResort){

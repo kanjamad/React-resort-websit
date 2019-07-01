@@ -219,7 +219,6 @@ const backToArray = [...unigeSet];
 ```
 npm install contentful
 
-
 ```
 
 ```
@@ -256,6 +255,48 @@ npm install contentful
 
         }
 ```
+
+### Chang variable to the environment variable
+* Beacuse I don't want to push them up to github
+
+src/Contentful.js
+
+```
+import {createClient} from 'contentful';
+
+export default createClient({
+    space : "p9exampley5f",
+    accessToken: "exKzA6eVIiV6tcHIbEa8BxhCmB4ibBWrIn8POrexample56"
+
+});
+```
+
+* Create the new file call   .env.development
+* Add .env.development to .gitigore
+* In the file will create the environment variables
+
+.env.development
+```
+REACT_APP_API_SPACE = p9exampley5f
+REACT_APP_ACCESS_TOKEN = exKzA6eVIiV6tcHIbEa8BxhCmB4ibBWrIn8POrexample56
+
+```
+* Access these environment variables would go with process.env and whatever name I have need to matching
+src/Contentful.js
+```
+import {createClient} from 'contentful';
+
+export default createClient({
+    space : process.env.REACT_APP_API_SPACE,
+    accessToken: process.env.REACT_APP_ACCESS_TOKEN
+});
+
+```
+* Restart the server
+* npm start
+
+
+
 
 
 
