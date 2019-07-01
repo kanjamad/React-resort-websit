@@ -216,6 +216,46 @@ const backToArray = [...unigeSet];
 * Consume data without changing the data
 * Can access data even have different type of application. Example currently I'm using react application and I could do the same with Gatsby, I could do the same with vanilla javaScript and that external platform will be by the name of contentful.  
 
+```
+npm install contentful
+
+
+```
+
+```
+    import Client from './Contentful';
+
+    // getData from contentful
+    getData = async () => {
+        try {
+            let response = await Client.getEntries({
+                content_type : "beachResortRoom",
+                order: "sys.createdAt"
+            });
+        let rooms = this.formatData(response.items);
+        let featuredRooms = rooms.filter(room => room.featured === true);
+        let maxPrice = Math.max(...rooms.map(item => item.price));
+        let maxSize = Math.max(...rooms.map(item => item.size));
+
+        this.setState({
+            rooms,
+            featuredRooms,
+            sortedRooms: rooms,
+            loading: false,
+            price: maxPrice,
+            maxPrice,
+            maxSize
+        });
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+        componentDidMount() {
+            this.getData();
+
+        }
+```
 
 
 
@@ -237,6 +277,7 @@ const backToArray = [...unigeSet];
 15. <a href="https://www.contentful.com/r/knowledgebase/headless-and-decoupled-cms/" target="_blank">Content infrastructure vs. headless and decoupled CMS</a>
 16. <a href="https://contentful.github.io/contentful.js/contentful/7.8.1/index.html" target="_blank">contentful.js - Contentful JavaScript Delivery SDK</a>
 17. <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/search-parameters/select-operator" target="_blank">REST API reference </a>
+18. <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/search-parameters/order" target="_blank">Search parameters (order) </a>
 
 
 
